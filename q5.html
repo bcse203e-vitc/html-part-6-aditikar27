@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Question 5</title>
+        <script>
+            function count(){
+                let number = parseInt(prompt("Please enter a number","num1"));
+                let result = 0;
+
+                while(number>0){
+                    result += 1;
+                    number = Math.floor(number/10);
+                }
+                console.log("count of digits in number is : " + result)
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="count()">count</button>
+    </body>
+</html>

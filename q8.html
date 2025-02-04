@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Question 8</title>
+        <script>
+            function findGCD() {
+                let num1 = parseInt(prompt("Please enter 1st numbers","num1"));
+                let num2 = parseInt(prompt("Please enter 2nd numbers","num2"));
+                while(b != 0){
+                    let t = b;
+                    b = a % b;
+                    a = t;
+                }
+                console.log("The GCD of", num1, "and", num2, "is", findGCD(num1, num2));
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="findGCD()">find gcd</button>
+    </body>
+</html>
+
+
+

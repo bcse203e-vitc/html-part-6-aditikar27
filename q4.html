@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Question 4</title>
+        <script>
+            function reverse(){
+                let number = parseInt(prompt("Please enter a number","num1"));
+                let result = 0;
+
+                while(number>0){
+                    // Getting the rightmost digit
+                    rightmost = number%10;
+                    
+                    result = result*10 + rightmost;
+                    
+                    // Removing the rightmost digit from the number
+                    number = Math.floor(number/10);
+                }
+                console.log("Reversed number is : " + result)
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="reverse()">Reverse</button>
+    </body>
+</html>

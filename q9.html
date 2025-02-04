@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Question 9</title>
+        <script>
+            function findlcm() {
+                let num1 = parseInt(prompt("Please enter 1st numbers","num1"));
+                let num2 = parseInt(prompt("Please enter 2nd numbers","num2"));
+                let min = (num1 > num2) ? num1 : num2;
+                while (true) {
+                    if (min % num1 == 0 && min % num2 == 0) {
+                        console.log(`The LCM of ${num1} and ${num2} is ${min}`);
+                        break;
+                    }
+                    min++;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="findlcm()">find lcm</button>
+    </body>
+</html>
+
+
+
+
