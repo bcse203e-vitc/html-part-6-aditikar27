@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Question 1</title>
+        <script>
+            function swap(a, b){
+                a = a ^ b;
+                b = a ^ b;
+                a = a ^ b;
+
+                console.log('After Bitwise XOR:');
+                console.log('a:', a); 
+                console.log('b:', b); 
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="swap(20,30)">a = 20 & b = 30<button>
+    </body>
+</html>
