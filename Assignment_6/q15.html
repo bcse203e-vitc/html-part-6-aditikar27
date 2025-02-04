@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Missing Number</title>
+        <script>
+            function findMissingNumber() {
+                var arr = [1, 2, 3, 5, 6];
+                var n = arr.length + 1;
+                var sum = (n * (n + 1)) / 2;
+                var arrSum = arr.reduce((acc, num) => acc + num, 0);
+                console.log("Missing Number: " + (sum - arrSum));
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="findMissingNumber()">Find Missing Number</button>
+    </body>
+</html>

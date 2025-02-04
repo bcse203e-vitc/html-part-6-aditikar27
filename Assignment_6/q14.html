@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Pangram Check</title>
+        <script>
+            function isPangram() {
+                var sentence = "The quick brown fox jumps over the lazy dog";
+                var alphabet = new Set("abcdefghijklmnopqrstuvwxyz");
+                for (let char of sentence.toLowerCase()) alphabet.delete(char);
+                console.log(alphabet.size === 0 ? "✅ It is a pangram." : "❌ Not a pangram.");
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="isPangram()">Check Pangram</button>
+    </body>
+</html>

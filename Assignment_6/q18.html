@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>First Non-Repeating Character</title>
+        <script>
+            function firstNonRepeatingChar() {
+                var str = "swiss";
+                var count = {};
+                for (let char of str) count[char] = (count[char] || 0) + 1;
+                for (let char of str) {
+                    if (count[char] === 1) {
+                        console.log("First Non-Repeating: " + char);
+                        return;
+                    }
+                }
+                console.log("No non-repeating character found.");
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="firstNonRepeatingChar()">Find First Non-Repeating</button>
+    </body>
+</html>
